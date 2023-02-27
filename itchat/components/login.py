@@ -298,10 +298,10 @@ def sync_check(self):
         'sid'      : self.loginInfo['wxsid'],
         'uin'      : self.loginInfo['wxuin'],
         'deviceid' : self.loginInfo['deviceid'],
-        'synckey'  : self.loginInfo['synckey'],
-        '_'        : self.loginInfo['logintime'], }
+        'synckey'  : self.loginInfo['synckey']
+        }#'_'        : self.loginInfo['logintime'], 
     headers = { 'User-Agent' : config.USER_AGENT }
-    self.loginInfo['logintime'] += 1
+    #self.loginInfo['logintime'] += 1
     try:
         r = self.s.get(url, params=params, headers=headers, timeout=config.TIMEOUT)
     except requests.exceptions.ConnectionError as e:
