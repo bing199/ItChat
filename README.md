@@ -1,3 +1,5 @@
+bing199：fixed the problem of "log out" and added "time.sleep(0.2)" to reduce requests and decrease the probability of baned accounts
+
 # itchat
 
 [![Gitter][gitter-picture]][gitter] ![py27][py27] ![py35][py35] [English version][english-version]
